@@ -1,0 +1,481 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    z-index: -1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffddf9;
+    border-radius: 20px; solid #ffddf9;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+    z-index: -3;
+}
+
+.flores {
+    position: relative;
+    background-color: #f7bcec;
+    border-radius: 20px;
+    width: 100%;
+    height: 200px;
+}
+
+.lilios {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: lilios-anim 5s infinite;
+}
+
+.lilios:nth-child(1) {
+    top: 20px;
+    left: 20px;
+}
+
+.lilios:nth-child(2) {
+    top: 80px;
+    left: 150px;
+}
+
+.lilios:nth-child(3) {
+    top: 140px;
+    left: 280px;
+}
+
+@keyframes lilios-anim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.mensagem {
+    padding: 20px;
+}
+
+#texto-mensagem {
+    font-size: 18px;
+    font-style: italic;
+}
+
+#botao-mensagem {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#botao-mensagem:hover {
+    background-color: #3e8e41;
+}
+
+.faixaDireita{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: brown;
+    z-index: -1;
+    width: 350px;
+    height: 100vh;
+}
+
+
+.fotos{
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    right: 1614px;
+    width: 13%;
+    margin: 12px auto;
+  border: 16px solid #fff;
+  background-color: white;
+    
+  }
+  
+  .fotoss{
+    position: absolute;
+    top: 430px;
+    left: 45px;
+    right: 1614px;
+    width: 13%;
+    margin: 12px auto;
+  border: 16px solid #fff;
+  background-color: white;
+    
+  }
+
+  .fotosss{
+    position: absolute;
+    top: 840px;
+    left: 45px;
+    right: 1614px;
+    width: 13%;
+    margin: 12px auto;
+  border: 16px solid #fff;
+  background-color: white;
+
+    
+  }
+
+  .fotossss{
+    position: absolute;
+    top: 1210px;
+    left: 45px;
+    right: 1614px;
+    width: 13%;
+    margin: 12px auto;
+  border: 16px solid #fff;
+  background-color: white;
+
+  }
+
+  .fotosssss{
+    position: absolute;
+    top: 1580px;
+    left: 45px;
+    right: 1614px;
+    width: 13%;
+    margin: 12px auto;
+  border: 16px solid #fff;
+  background-color: white;
+
+  }
+
+  .fotossssss{
+    position: absolute;
+    top: 1950px;
+    left: 45px;
+    right: 1614px;
+    width: 13%;
+    margin: 12px auto;
+  border: 16px solid #fff;
+  background-color: white;
+  }
+
+  .flor-gigante {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    animation: mexer 5s infinite;
+  }
+  
+  .flor-gigante img {
+    width: 900px;
+    height: 1000px;
+  }
+  
+  @keyframes mexer {
+    0% {
+      transform: translateY(-50%) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-50%) rotate(10deg);
+    }
+    50% {
+      transform: translateY(-50%) rotate(0deg);
+    }
+    75% {
+      transform: translateY(-50%) rotate(-10deg);
+    }
+    100% {
+      transform: translateY(-50%) rotate(0deg);
+    }
+  }
+
+  .florGigantee {
+    position: fixed;
+    top: 50%;
+    right: -100px;
+    transform: translateY(-50%);
+    animation: mexer 5s infinite;
+    z-index: +1;
+  }
+  
+  .florGigantee img {
+    width: 900px;
+    height: 1000px;
+  }
+  
+  @keyframes mexer {
+    0% {
+      transform: translateY(-50%) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-50%) rotate(10deg);
+    }
+    50% {
+      transform: translateY(-50%) rotate(0deg);
+    }
+    75% {
+      transform: translateY(-50%) rotate(-10deg);
+    }
+    100% {
+      transform: translateY(-50%) rotate(0deg);
+    }
+  }
+  
+  .fotonossa{
+    position: absolute;
+    top: 1280px;
+    left: 911px;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+  }
+  
+  .picture{
+    overflow: hidden;
+    border: none;
+    border-radius: 20px;
+  }
+  .faixacentral {
+    height: 400px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #70506b;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: height 0.5s;
+  }
+  
+  .flecha {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  #botao-flecha {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #botao-flecha img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .letramusica {
+    display: block !important;
+    padding: 20px;
+    color: #fff;
+    background-color: transparent;
+  }
+  
+  
+  .faixacentral.expandida {
+    height: 800px;
+  }
+  
+  .faixacentral.expandida .letramusica {
+    display: block;
+  }
+  
+  
+  
+  
+  .particulas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: transparent;
+    z-index: -4;
+  }
+  
+  .particula-vermelha {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    animation: particula-vermelha 10s infinite linear;
+    z-index: -4;
+  }
+  
+  .particula-rosa {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 105, 180, 0.5);
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    animation: particula-rosa 10s infinite linear;
+    z-index: -4;
+  }
+  
+  @keyframes particula-vermelha {
+    0% {
+      transform: translateY(100vh);
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-100vh);
+      opacity: 0;
+      z-index: -4;
+    }
+  }
+  
+  @keyframes particula-rosa {
+    0% {
+      transform: translateY(100vh);
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-100vh);
+      opacity: 0;
+    }
+  }
+
+  .fotonossa {
+  position: absolute;
+  top: 1280px;
+  left: 911px;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+}
+
+.container-amor {
+  position: absolute;
+  top: 2000px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 40px;
+  background-color: rgba(255, 105, 180, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.texto-amor {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff69b4;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.container-vejo {
+  position: absolute;
+  background-color: transparent;
+  top: 2300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.texto-vejo {
+  font-size: 40px;
+  font-style: italic;
+  font-family: "Arial", "Times New Roman", serif;
+
+  color: #ffffff;
+  position: relative;
+}
+
+.coracao-animado {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/018/868/329/non_2x/red-heart-symbol-on-transparent-background-free-png.png');
+  border-radius: 50%;
+  animation: coracao-saindo 2s infinite;
+}
+
+.coracao-animado:nth-child(1) {
+  top: 50%;
+  left: 30%;
+  animation-delay: 0s;
+}
+
+.coracao-animado:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  animation-delay: 0.5s;
+}
+
+.coracao-animado:nth-child(3) {
+  top: 50%;
+  left: 70%;
+  animation-delay: 1s;
+}
+
+.coracao-animado:nth-child(4) {
+  top: 40%;
+  left: 40%;
+  animation-delay: 1.5s;
+}
+
+.coracao-animado:nth-child(5) {
+  top: 60%;
+  left: 60%;
+  animation-delay: 2s;
+}
+
+@keyframes coracao-saindo {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scale(0);
+    opacity: 0;
+  }
+}
+
+
+
+  
+  
+
+  
+ 
+  
+  
+  
+  
